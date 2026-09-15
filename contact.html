@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Consultation Request & Global Offices | Vanguard</title>
+  <meta name="description" content="Request a confidential executive consultation with Vanguard Strategy Partners' managing directors. Locate our global offices in New York, London, and Singapore.">
+  <link rel="canonical" href="https://vanguardstrategy.example.com/contact.html">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo">
+          <span class="brand-icon-box"><i class="ri-shield-flash-line"></i></span>
+          <span>Vanguard Partners</span>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="home2.html" class="nav-link">Home 2</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="index.html#case-studies" class="nav-link">Case Studies</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn-icon-only rtl-toggle-btn rtl-toggle-desktop" aria-label="Toggle RTL direction" title="Toggle RTL direction">
+            <i class="ri-arrow-left-right-line"></i>
+          </button>
+          <button class="btn-icon-only theme-toggle-btn theme-toggle-desktop" aria-label="Toggle dark mode" title="Toggle theme">
+            <i class="ri-moon-line"></i>
+          </button>
+          <a href="login.html" class="btn-login">Login</a>
+          <button class="hamburger-btn" aria-label="Open mobile navigation menu">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay">
+    <div class="mobile-drawer">
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-logo">
+          <span class="brand-icon-box"><i class="ri-shield-flash-line"></i></span>
+          <span>Vanguard</span>
+        </a>
+        <button class="mobile-drawer-close" aria-label="Close mobile menu"><i class="ri-close-line"></i></button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="home2.html" class="mobile-nav-link">Home 2</a></li>
+        <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+        <li><a href="index.html#case-studies" class="mobile-nav-link">Case Studies</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li><a href="blog.html" class="mobile-nav-link">Blog</a></li>
+        <li><a href="contact.html" class="mobile-nav-link active">Contact</a></li>
+        <li><a href="dashboard.html" class="mobile-nav-link">Dashboard</a></li>
+      </ul>
+
+      <div class="mobile-drawer-actions">
+        <div class="mobile-toggles-row">
+          <button class="btn-icon-only theme-toggle-btn" aria-label="Toggle theme"><i class="ri-moon-line"></i> Theme</button>
+          <button class="btn-icon-only rtl-toggle-btn" aria-label="Toggle RTL"><i class="ri-arrow-left-right-line"></i> RTL</button>
+        </div>
+        <a href="login.html" class="btn-login">Login</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- CONTACT HERO -->
+    <section class="hero-section" style="padding-block-end: var(--space-xl);">
+      <div class="container">
+        <div class="hero-inner">
+          <span class="section-tag"><i class="ri-chat-voice-line"></i> Direct Engagement</span>
+          <h1>Initiate an Executive Consultation</h1>
+          <p class="lead-text hero-description">
+            All inquiries are received under immediate mutual non-disclosure and routed directly to Practice Managing Partners for preliminary evaluation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM & DETAILS SECTION -->
+    <section class="section-padding" style="padding-block-start: 0;">
+      <div class="container">
+        <div class="split-content-grid" style="align-items: start;">
+          
+          <!-- Consultation Form Card -->
+          <div class="card" style="align-items: stretch; text-align: start; padding: var(--space-2xl) var(--space-xl);">
+            <div style="margin-block-end: var(--space-lg); text-align: center;">
+              <span class="section-tag" style="margin-block-end: 4px;">Confidential Ingestion</span>
+              <h2 style="font-size: 1.75rem;">Mandate Overview</h2>
+              <p class="caption-text">We guarantee an initial response within 12 business hours.</p>
+            </div>
+
+            <!-- Success Banner -->
+            <div class="form-success-banner" id="contactSuccessBanner">
+              <i class="ri-checkbox-circle-fill"></i> Thank you. Your inquiry has been submitted under strict NDA. A Managing Partner will contact you within 12 business hours.
+            </div>
+
+            <form id="consultationForm" data-validate="true" novalidate>
+              <div class="form-group">
+                <label class="form-label" for="contactName">Full Legal Name <span class="required-star">*</span></label>
+                <input type="text" class="form-input" id="contactName" name="name" placeholder="e.g. Eleanor Vance" required>
+                <span class="form-error-msg">Please enter your full name.</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">Corporate Work Email <span class="required-star">*</span></label>
+                <input type="email" class="form-input" id="contactEmail" name="email" placeholder="e.g. e.vance@aurelius.com" required>
+                <span class="form-error-msg">Please enter a valid corporate email.</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactCompany">Enterprise / Organization Name <span class="required-star">*</span></label>
+                <input type="text" class="form-input" id="contactCompany" name="company" placeholder="e.g. Aurelius Group Holdings" required>
+                <span class="form-error-msg">Please specify your enterprise or organization.</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactPractice">Advisory Practice of Interest <span class="required-star">*</span></label>
+                <select class="form-select" id="contactPractice" name="practice" required>
+                  <option value="">Select practice area...</option>
+                  <option value="finance">Corporate Strategy & Capital Allocation</option>
+                  <option value="mna">M&A Advisory & Post-Merger Integration</option>
+                  <option value="digital">AI & Enterprise Digital Transformation</option>
+                  <option value="operations">Operations Turnaround & Supply Reshoring</option>
+                  <option value="governance">Board Governance & Executive Succession</option>
+                  <option value="general">Comprehensive Diagnostic Review</option>
+                </select>
+                <span class="form-error-msg">Please select an advisory practice.</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactMessage">Strategic Objective & Context <span class="required-star">*</span></label>
+                <textarea class="form-textarea" id="contactMessage" name="message" placeholder="Provide high-level context on your current transaction, operational bottleneck, or board agenda..." required></textarea>
+                <span class="form-error-msg">Please describe your strategic objective.</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-checkbox-wrapper">
+                  <input type="checkbox" name="terms" required>
+                  <span style="font-size: var(--size-caption); color: var(--color-text-muted);">
+                    I agree to initiate exploratory discussions under Vanguard Strategy Partners' standard mutual confidentiality protocol.
+                  </span>
+                </label>
+                <span class="form-error-msg">You must accept the confidentiality agreement before submitting.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-block-start: var(--space-sm);">
+                Submit Advisory Inquiry <i class="ri-send-plane-fill"></i>
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Details & Office Map Placeholder -->
+          <div style="display: flex; flex-direction: column; gap: var(--space-lg);">
+            <!-- Direct Partner Lines -->
+            <div class="card" style="align-items: start; text-align: start;">
+              <h3 style="font-size: 1.35rem; margin-block-end: var(--space-sm);"><i class="ri-phone-fill" style="color: var(--color-accent);"></i> Direct Partner Lines</h3>
+              <p class="caption-text" style="margin-block-end: var(--space-md);">For urgent deal diligence or board-directed inquiries:</p>
+              <div style="display: flex; flex-direction: column; gap: 12px; width: 100%; font-size: 0.95rem;">
+                <div>
+                  <strong>New York Desk:</strong> +1 (212) 555-0199<br>
+                  <span class="caption-text">Americas Timezones (EST / CST / PST)</span>
+                </div>
+                <div style="border-top: 1px solid var(--color-border); padding-top: 8px;">
+                  <strong>London Desk:</strong> +44 20 7946 0912<br>
+                  <span class="caption-text">European Timezones (GMT / CET)</span>
+                </div>
+                <div style="border-top: 1px solid var(--color-border); padding-top: 8px;">
+                  <strong>Singapore Desk:</strong> +65 6789 0123<br>
+                  <span class="caption-text">Asia-Pacific Timezones (SGT / JST / AEST)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Map Graphic Placeholder -->
+            <div class="card" style="align-items: stretch; text-align: start; padding: var(--space-lg);">
+              <h3 style="font-size: 1.35rem; margin-block-end: var(--space-sm);"><i class="ri-map-2-line" style="color: var(--color-accent);"></i> Americas Headquarters</h3>
+              <p class="caption-text" style="margin-block-end: var(--space-md);">375 Park Avenue, 32nd Floor, New York, NY 10152</p>
+              
+              <!-- Styled Map Canvas / Container -->
+              <div style="width: 100%; height: 260px; border-radius: var(--border-radius); background: linear-gradient(135deg, #0A192F, #1E293B); display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden; border: 1px solid var(--color-border);">
+                <!-- Simulated Radar Grid -->
+                <div style="position: absolute; inset: 0; background: radial-gradient(circle, rgba(197, 160, 89, 0.15) 1px, transparent 1px); background-size: 24px 24px; opacity: 0.4;"></div>
+                
+                <div style="position: relative; z-index: 2; text-align: center; color: var(--color-white); padding: 16px;">
+                  <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--color-accent); color: #0A192F; display: inline-flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-block-end: 8px; box-shadow: 0 0 20px rgba(197, 160, 89, 0.6);">
+                    <i class="ri-building-2-fill"></i>
+                  </div>
+                  <strong style="display: block; font-family: var(--font-heading); font-size: 1.1rem;">Park Avenue Tower</strong>
+                  <span style="font-size: 0.8rem; color: #94A3B8;">Latitude: 40.7589° N | Longitude: 73.9723° W</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-block-end: var(--space-sm);">
+            <span class="brand-icon-box"><i class="ri-shield-flash-line"></i></span>
+            <span>Vanguard Partners</span>
+          </a>
+          <p style="margin-block-end: var(--space-md);">
+            Elite management consulting and financial advisory firm engineered to counsel boards, CEOs, and private equity leaders on high-impact strategic initiatives.
+          </p>
+          <p class="caption-text">
+            <i class="ri-map-pin-line"></i> 375 Park Avenue, 32nd Floor, New York, NY 10152<br>
+            <i class="ri-phone-line"></i> +1 (212) 555-0199 &nbsp;|&nbsp; <i class="ri-mail-line"></i> advisory@vanguardstrategy.com
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="team-social-link" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            <a href="#" class="team-social-link" aria-label="Twitter / X"><i class="ri-twitter-x-line"></i></a>
+            <a href="#" class="team-social-link" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Advisory Practices</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Corporate Finance</a></li>
+            <li><a href="services.html" class="footer-link">M&A & Deal Structuring</a></li>
+            <li><a href="services.html" class="footer-link">AI & Digital Strategy</a></li>
+            <li><a href="services.html" class="footer-link">Operations Turnaround</a></li>
+            <li><a href="services.html" class="footer-link">ESG & Risk Governance</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">Firm Overview</a></li>
+            <li><a href="services.html" class="footer-link">Consulting Services</a></li>
+            <li><a href="blog.html" class="footer-link">Executive Insights</a></li>
+            <li><a href="contact.html" class="footer-link">Contact & Locations</a></li>
+            <li><a href="dashboard.html" class="footer-link">Client Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Executive Briefing</h4>
+          <p class="caption-text" style="margin-block-end: var(--space-xs);">
+            Quarterly strategic memoranda analyzing geopolitical risk, capital allocation, and M&A trends.
+          </p>
+          <form class="footer-newsletter-form" data-validate="true" novalidate>
+            <div class="form-group" style="margin-block-end: 0; width: 100%;">
+              <input type="email" class="form-input" placeholder="Enter work email" required aria-label="Email address">
+              <span class="form-error-msg">Please enter a valid work email.</span>
+            </div>
+            <button type="submit" class="btn btn-primary" style="padding: 10px 18px;">Join</button>
+          </form>
+          <div class="form-success-banner" style="margin-block-start: 8px;">
+            Subscription confirmed.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vanguard Strategy Partners LLC. All rights reserved. Confidential Business Advisory.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

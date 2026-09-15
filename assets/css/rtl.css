@@ -1,0 +1,102 @@
+/* ==========================================================================
+   VANGUARD STRATEGY PARTNERS — RTL OVERRIDES ONLY (STEP 5)
+   Triggered by dir="rtl" on <html> or .rtl class on <body>
+   ========================================================================== */
+
+[dir="rtl"],
+body.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* 1. Mobile Drawer Flip (Slides from LEFT in RTL mode) */
+[dir="rtl"] .mobile-drawer,
+body.rtl .mobile-drawer {
+  right: auto;
+  left: 0;
+  border-inline-start: none;
+  border-inline-end: 1px solid var(--color-border);
+  box-shadow: 10px 0 40px rgba(0, 0, 0, 0.25);
+  transform: translateX(-100%);
+}
+
+[dir="rtl"] .mobile-drawer-overlay.active .mobile-drawer,
+body.rtl .mobile-drawer-overlay.active .mobile-drawer {
+  transform: translateX(0);
+}
+
+/* 2. Form Alignments */
+[dir="rtl"] .form-group,
+body.rtl .form-group {
+  text-align: right;
+}
+
+[dir="rtl"] .form-checkbox-wrapper,
+body.rtl .form-checkbox-wrapper {
+  text-align: right;
+}
+
+/* 3. Hero Split Alignment (Home 2) */
+[dir="rtl"] .hero-split-content,
+body.rtl .hero-split-content {
+  text-align: right;
+}
+
+[dir="rtl"] .hero-split-content h1,
+[dir="rtl"] .hero-split-content p,
+body.rtl .hero-split-content h1,
+body.rtl .hero-split-content p {
+  text-align: right;
+}
+
+/* 4. Article Blockquotes */
+[dir="rtl"] .article-pullquote,
+body.rtl .article-pullquote {
+  border-inline-start: 4px solid var(--color-accent);
+  border-inline-end: none;
+  padding-inline-start: var(--space-lg);
+  padding-inline-end: 0;
+}
+
+/* 5. Icons with directionality */
+[dir="rtl"] .ri-arrow-right-line,
+[dir="rtl"] .ri-arrow-right-up-line,
+body.rtl .ri-arrow-right-line,
+body.rtl .ri-arrow-right-up-line {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+/* 6. Timeline alignment in RTL */
+@media (min-width: 769px) {
+  [dir="rtl"] .timeline-item:nth-child(odd),
+  body.rtl .timeline-item:nth-child(odd) {
+    text-align: start;
+  }
+
+  [dir="rtl"] .timeline-item:nth-child(even),
+  body.rtl .timeline-item:nth-child(even) {
+    text-align: end;
+  }
+}
+
+@media (max-width: 768px) {
+  [dir="rtl"] .timeline-wrapper::before,
+  body.rtl .timeline-wrapper::before {
+    left: auto;
+    right: 20px;
+  }
+
+  [dir="rtl"] .timeline-item,
+  body.rtl .timeline-item {
+    padding-inline-start: 0;
+    padding-inline-end: 48px;
+    text-align: start !important;
+  }
+
+  [dir="rtl"] .timeline-dot,
+  body.rtl .timeline-dot {
+    right: 11px !important;
+    left: auto !important;
+  }
+}

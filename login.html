@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Vanguard Strategy Partners Advisory Portal</title>
+  <meta name="description" content="Secure executive client login for Vanguard Strategy Partners Advisory Portal.">
+  <link rel="canonical" href="https://vanguardstrategy.example.com/login.html">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="auth-body-layout">
+
+  <!-- AUTH CARD: Centered vertically & horizontally, no scroll, NO theme toggle, NO back-to-home -->
+  <main class="auth-card">
+    <div class="auth-logo">
+      <span class="brand-icon-box" style="width: 48px; height: 48px; font-size: 1.5rem; margin-inline: auto;">
+        <i class="ri-shield-flash-line"></i>
+      </span>
+    </div>
+
+    <h1 class="auth-title">Advisory Portal Login</h1>
+    <p class="auth-subtitle">Enter your institutional credentials to access your executive workspace</p>
+
+    <div class="form-success-banner" style="width: 100%;">
+      Authentication successful. Redirecting to advisory portal...
+    </div>
+
+    <form class="auth-form" data-validate="true" novalidate>
+      <div class="form-group">
+        <label class="form-label" for="loginEmail">Work Email <span class="required-star">*</span></label>
+        <input type="email" class="form-input" id="loginEmail" name="email" placeholder="name@enterprise.com" required>
+        <span class="form-error-msg">Please enter a valid corporate email.</span>
+      </div>
+
+      <div class="form-group">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-block-end: 6px;">
+          <label class="form-label" for="loginPassword" style="margin-block-end: 0;">Password <span class="required-star">*</span></label>
+          <a href="#" style="font-size: var(--size-caption); color: var(--color-accent);">Forgot password?</a>
+        </div>
+        <input type="password" class="form-input" id="loginPassword" name="password" minlength="8" placeholder="••••••••" required>
+        <span class="form-error-msg">Password must be at least 8 characters.</span>
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="width: 100%; margin-block-start: var(--space-xs);">
+        Login
+      </button>
+
+      <div class="auth-divider">
+        <span>or authorize with enterprise SSO</span>
+      </div>
+
+      <!-- Social Logins (Google and Apple) -->
+      <div class="social-auth-group">
+        <button type="button" class="btn-social">
+          <!-- Official Google SVG Icon -->
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.64 9.20455C17.64 8.56636 17.5827 7.95273 17.4764 7.36364H9V10.845H13.8436C13.635 11.97 13.0009 12.9232 12.0477 13.5614V15.8195H14.9564C16.6582 14.2527 17.64 11.9455 17.64 9.20455Z" fill="#4285F4"/>
+            <path d="M9 18C11.43 18 13.4673 17.1941 14.9564 15.8195L12.0477 13.5614C11.2418 14.1014 10.2109 14.4205 9 14.4205C6.65591 14.4205 4.67182 12.8373 3.96409 10.71H0.957275V13.0418C2.43818 15.9832 5.48182 18 9 18Z" fill="#34A853"/>
+            <path d="M3.96409 10.71C3.78409 10.17 3.68182 9.59318 3.68182 9C3.68182 8.40682 3.78409 7.83 3.96409 7.29V4.95818H0.957275C0.347727 6.17318 0 7.54773 0 9C0 10.4523 0.347727 11.8268 0.957275 13.0418L3.96409 10.71Z" fill="#FBBC05"/>
+            <path d="M9 3.57955C10.3214 3.57955 11.5077 4.03364 12.4405 4.92545L15.0218 2.34409C13.4632 0.891818 11.4259 0 9 0C5.48182 0 2.43818 2.01682 0.957275 4.95818L3.96409 7.29C4.67182 5.16273 6.65591 3.57955 9 3.57955Z" fill="#EA4335"/>
+          </svg>
+          Continue with Google
+        </button>
+
+        <button type="button" class="btn-social">
+          <!-- Official Apple SVG Icon -->
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.07 14.52C13.335 15.6 12.555 16.665 11.37 16.68C10.215 16.695 9.84 15.99 8.52 15.99C7.185 15.99 6.78 16.665 5.685 16.71C4.545 16.755 3.66 15.585 2.925 14.52C1.425 12.36 0.285 8.445 1.83 5.76C2.595 4.425 3.96 3.585 5.43 3.555C6.555 3.54 7.62 4.32 8.31 4.32C8.985 4.32 10.29 3.375 11.64 3.525C12.21 3.555 13.785 3.765 14.79 5.235C14.7 5.295 12.87 6.36 12.885 8.535C12.915 11.145 15.21 12.015 15.255 12.045C15.225 12.15 14.865 13.395 14.07 14.52ZM10.89 2.34C11.475 1.635 11.88 0.66 11.76 0C10.92 0.03 9.87 0.555 9.27 1.26C8.745 1.875 8.28 2.865 8.415 3.51C9.36 3.585 10.305 3.045 10.89 2.34Z"/>
+          </svg>
+          Continue with Apple
+        </button>
+      </div>
+
+      <div class="auth-switch-link">
+        Don't have an enterprise account? <a href="register.html">Register</a>
+      </div>
+    </form>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

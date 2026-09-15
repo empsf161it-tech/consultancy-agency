@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Advisory Portal | Vanguard Strategy Partners</title>
+  <meta name="description" content="Executive client advisory dashboard and engagement workspace for Vanguard Strategy Partners. Track workstreams, milestones, and deliverable briefings.">
+  <link rel="canonical" href="https://vanguardstrategy.example.com/dashboard.html">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo">
+          <span class="brand-icon-box"><i class="ri-shield-flash-line"></i></span>
+          <span>Vanguard Partners</span>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="home2.html" class="nav-link">Home 2</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="index.html#case-studies" class="nav-link">Case Studies</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="dashboard.html" class="nav-link active">Dashboard</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn-icon-only rtl-toggle-btn rtl-toggle-desktop" aria-label="Toggle RTL direction" title="Toggle RTL direction">
+            <i class="ri-arrow-left-right-line"></i>
+          </button>
+          <button class="btn-icon-only theme-toggle-btn theme-toggle-desktop" aria-label="Toggle dark mode" title="Toggle theme">
+            <i class="ri-moon-line"></i>
+          </button>
+          <a href="login.html" class="btn-login">Login</a>
+          <button class="hamburger-btn" aria-label="Open mobile navigation menu">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay">
+    <div class="mobile-drawer">
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-logo">
+          <span class="brand-icon-box"><i class="ri-shield-flash-line"></i></span>
+          <span>Vanguard</span>
+        </a>
+        <button class="mobile-drawer-close" aria-label="Close mobile menu"><i class="ri-close-line"></i></button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="home2.html" class="mobile-nav-link">Home 2</a></li>
+        <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+        <li><a href="index.html#case-studies" class="mobile-nav-link">Case Studies</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li><a href="blog.html" class="mobile-nav-link">Blog</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        <li><a href="dashboard.html" class="mobile-nav-link active">Dashboard</a></li>
+      </ul>
+
+      <div class="mobile-drawer-actions">
+        <div class="mobile-toggles-row">
+          <button class="btn-icon-only theme-toggle-btn" aria-label="Toggle theme"><i class="ri-moon-line"></i> Theme</button>
+          <button class="btn-icon-only rtl-toggle-btn" aria-label="Toggle RTL"><i class="ri-arrow-left-right-line"></i> RTL</button>
+        </div>
+        <a href="login.html" class="btn-login">Login</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="section-padding" style="padding-block-start: var(--space-xl);">
+    <div class="container">
+      
+      <!-- DASHBOARD HEADER -->
+      <div class="dashboard-header-bar">
+        <div>
+          <span class="section-tag" style="margin-block-end: 4px;"><i class="ri-shield-check-line"></i> Active Engagement Space</span>
+          <h1 style="font-size: clamp(1.8rem, 3vw, 2.5rem); text-align: start;">Aurelius Global Holdings</h1>
+          <p class="caption-text">Mandate: Post-Merger Operational Realignment &amp; EBITDA Realization</p>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+          <select class="form-select" id="metricPeriodSelect" style="padding: 10px 16px; font-size: 0.9rem; width: auto;" aria-label="Select reporting period">
+            <option value="ytd">Current Sprint (YTD)</option>
+            <option value="all">Full Mandate Horizon</option>
+          </select>
+          <a href="contact.html" class="btn btn-primary" style="padding: 10px 18px; font-size: 0.9rem;">
+            <i class="ri-phone-fill"></i> Partner Hotline
+          </a>
+        </div>
+      </div>
+
+      <!-- KPI METRICS GRID -->
+      <div class="card-grid card-grid-4" style="margin-block-end: var(--space-2xl);">
+        <div class="card">
+          <div class="card-icon" style="width: 48px; height: 48px; font-size: 1.3rem;"><i class="ri-funds-line"></i></div>
+          <div class="hero-metric-value" id="kpiValAdvised">$4.2B</div>
+          <span class="card-title" style="font-size: 1rem; margin-block-end: 2px;">Synergy Value Advised</span>
+          <span class="caption-text" style="color: var(--color-success);"><i class="ri-arrow-up-line"></i> 18.2% vs target</span>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" style="width: 48px; height: 48px; font-size: 1.3rem;"><i class="ri-git-branch-line"></i></div>
+          <div class="hero-metric-value" id="kpiEngagements">8 Active</div>
+          <span class="card-title" style="font-size: 1rem; margin-block-end: 2px;">Cross-Functional Pods</span>
+          <span class="caption-text">100% on schedule</span>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" style="width: 48px; height: 48px; font-size: 1.3rem;"><i class="ri-percent-line"></i></div>
+          <div class="hero-metric-value" id="kpiEbitda">+28.4%</div>
+          <span class="card-title" style="font-size: 1rem; margin-block-end: 2px;">EBITDA Expansion</span>
+          <span class="caption-text">Annualized run-rate</span>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" style="width: 48px; height: 48px; font-size: 1.3rem;"><i class="ri-shield-flash-line"></i></div>
+          <div class="hero-metric-value" id="kpiRisk" style="font-size: 1.6rem;">Low (0.12)</div>
+          <span class="card-title" style="font-size: 1rem; margin-block-end: 2px;">Transition Risk Index</span>
+          <span class="caption-text" style="color: var(--color-success);">Optimal safe zone</span>
+        </div>
+      </div>
+
+      <!-- DASHBOARD TABS NAVIGATION -->
+      <div style="margin-block-end: var(--space-xl);">
+        <nav class="dashboard-nav-tabs" aria-label="Portal Navigation Tabs">
+          <button class="dash-nav-item active" data-tab="tabWorkstreams"><i class="ri-git-merge-line"></i> Active Workstreams</button>
+          <button class="dash-nav-item" data-tab="tabDeliverables"><i class="ri-folder-download-line"></i> Deliverable Vault</button>
+          <button class="dash-nav-item" data-tab="tabMilestones"><i class="ri-calendar-check-line"></i> Milestone Roadmap</button>
+          <button class="dash-nav-item" data-tab="tabAdvisors"><i class="ri-user-star-line"></i> Assigned Partners</button>
+        </nav>
+      </div>
+
+      <!-- TAB 1: WORKSTREAMS -->
+      <div class="dash-pane active" id="tabWorkstreams">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-block-end: var(--space-md); flex-wrap: wrap; gap: 12px;">
+          <h2 style="font-size: 1.5rem; text-align: start;">Strategic Workstreams &amp; Velocity</h2>
+          <div style="display: flex; gap: 8px;">
+            <button class="filter-btn workstream-filter-btn active" data-status="all">All (4)</button>
+            <button class="filter-btn workstream-filter-btn" data-status="active">In Progress (2)</button>
+            <button class="filter-btn workstream-filter-btn" data-status="review">Board Review (1)</button>
+            <button class="filter-btn workstream-filter-btn" data-status="queued">Queued (1)</button>
+          </div>
+        </div>
+
+        <div class="workstream-table-card">
+          <table class="workstream-table">
+            <thead>
+              <tr>
+                <th>Workstream Code</th>
+                <th>Initiative Name</th>
+                <th>Lead Partner</th>
+                <th>Target Completion</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="workstream-item" data-status="active">
+                <td><strong>WS-01</strong></td>
+                <td>North American Supply Chain Consolidation</td>
+                <td>Harrison Forde</td>
+                <td>Nov 15, 2026</td>
+                <td><span class="workstream-status-tag status-active"><i class="ri-loader-4-line"></i> In Progress</span></td>
+              </tr>
+              <tr class="workstream-item" data-status="review">
+                <td><strong>WS-02</strong></td>
+                <td>Executive Compensation &amp; LTIP Harmonization</td>
+                <td>Elena Rostova</td>
+                <td>Oct 31, 2026</td>
+                <td><span class="workstream-status-tag status-review"><i class="ri-time-line"></i> Board Review</span></td>
+              </tr>
+              <tr class="workstream-item" data-status="active">
+                <td><strong>WS-03</strong></td>
+                <td>Enterprise Cloud ERP Rationalization</td>
+                <td>Dr. Alistair Chen</td>
+                <td>Dec 10, 2026</td>
+                <td><span class="workstream-status-tag status-active"><i class="ri-loader-4-line"></i> In Progress</span></td>
+              </tr>
+              <tr class="workstream-item" data-status="queued">
+                <td><strong>WS-04</strong></td>
+                <td>APAC Cross-Border Entity De-registration</td>
+                <td>Julian Sterling</td>
+                <td>Jan 20, 2027</td>
+                <td><span class="workstream-status-tag status-queued"><i class="ri-pause-circle-line"></i> Scheduled</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- TAB 2: DELIVERABLES -->
+      <div class="dash-pane" id="tabDeliverables">
+        <h2 style="font-size: 1.5rem; text-align: start; margin-block-end: var(--space-md);">Board Briefings &amp; Technical Memos</h2>
+        <div class="card-grid card-grid-3">
+          <div class="card" style="align-items: start; text-align: start;">
+            <div class="card-icon"><i class="ri-file-pdf-2-line"></i></div>
+            <h3 class="card-title">100-Day Synergy Blueprint</h3>
+            <p class="caption-text">Comprehensive quantitative audit of cross-entity redundancies and procurement savings.</p>
+            <div style="margin-block-start: auto; width: 100%; border-top: 1px solid var(--color-border); padding-top: 12px; display: flex; justify-content: space-between; align-items: center;">
+              <span class="caption-text">PDF • 4.8 MB</span>
+              <a href="#" class="btn btn-secondary" style="padding: 6px 14px; font-size: 0.85rem;"><i class="ri-download-2-line"></i> Download</a>
+            </div>
+          </div>
+
+          <div class="card" style="align-items: start; text-align: start;">
+            <div class="card-icon"><i class="ri-file-chart-line"></i></div>
+            <h3 class="card-title">Working Capital Stress-Test</h3>
+            <p class="caption-text">Monte Carlo liquidity simulation assessing interest rate fluctuations across FY26-FY28.</p>
+            <div style="margin-block-start: auto; width: 100%; border-top: 1px solid var(--color-border); padding-top: 12px; display: flex; justify-content: space-between; align-items: center;">
+              <span class="caption-text">XLSX • 8.2 MB</span>
+              <a href="#" class="btn btn-secondary" style="padding: 6px 14px; font-size: 0.85rem;"><i class="ri-download-2-line"></i> Download</a>
+            </div>
+          </div>
+
+          <div class="card" style="align-items: start; text-align: start;">
+            <div class="card-icon"><i class="ri-file-shield-2-line"></i></div>
+            <h3 class="card-title">IT Security &amp; Data Integration Memo</h3>
+            <p class="caption-text">Regulatory data boundary clearance and enterprise cyber posture review post-closing.</p>
+            <div style="margin-block-start: auto; width: 100%; border-top: 1px solid var(--color-border); padding-top: 12px; display: flex; justify-content: space-between; align-items: center;">
+              <span class="caption-text">PDF • 2.4 MB</span>
+              <a href="#" class="btn btn-secondary" style="padding: 6px 14px; font-size: 0.85rem;"><i class="ri-download-2-line"></i> Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3: MILESTONES -->
+      <div class="dash-pane" id="tabMilestones">
+        <h2 style="font-size: 1.5rem; text-align: start; margin-block-end: var(--space-md);">Governance Milestones &amp; Gate Reviews</h2>
+        <div class="card" style="align-items: stretch; text-align: start; padding: var(--space-xl);">
+          <div style="display: flex; flex-direction: column; gap: var(--space-lg);">
+            <div style="display: flex; gap: 16px; align-items: flex-start;">
+              <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--color-success); color: white; display: flex; align-items: center; justify-content: center; font-size: 1rem;"><i class="ri-check-line"></i></div>
+              <div>
+                <strong>Milestone 01: Diagnostic Liquidity Audit Complete</strong>
+                <p class="caption-text">Uncovered $38M in trapped regional inventory. Approved by Audit Committee on Aug 24, 2026.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 16px; align-items: flex-start;">
+              <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--color-accent); color: #0A192F; display: flex; align-items: center; justify-content: center; font-size: 1rem;"><i class="ri-time-line"></i></div>
+              <div>
+                <strong>Milestone 02: Supplier Contract Renogotiation Sprint</strong>
+                <p class="caption-text">Targeting 120 BPS COGS reduction. In active negotiations across top 40 vendor contracts.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 16px; align-items: flex-start;">
+              <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--color-surface-alt); border: 1px solid var(--color-border); color: var(--color-text-muted); display: flex; align-items: center; justify-content: center; font-size: 1rem;"><i class="ri-checkbox-blank-circle-line"></i></div>
+              <div>
+                <strong>Milestone 03: Final Operating Entity Handover</strong>
+                <p class="caption-text">Transitioning oversight to internal management committee. Slated for Q1 2027.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 4: ADVISORS -->
+      <div class="dash-pane" id="tabAdvisors">
+        <h2 style="font-size: 1.5rem; text-align: start; margin-block-end: var(--space-md);">Assigned Engagement Partners</h2>
+        <div class="card-grid card-grid-3">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80" alt="Julian Sterling" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; margin-block-end: 8px; border: 2px solid var(--color-accent);">
+            <h3 class="card-title" style="font-size: 1.2rem;">Julian Sterling</h3>
+            <span class="caption-text" style="color: var(--color-accent);">Lead Engagement Partner</span>
+            <p class="caption-text" style="margin-block: 8px;">Direct: +1 (212) 555-0199<br>j.sterling@vanguardstrategy.com</p>
+            <a href="contact.html" class="btn btn-secondary" style="width: 100%;"><i class="ri-chat-1-line"></i> Secure Message</a>
+          </div>
+
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80" alt="Harrison Forde" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; margin-block-end: 8px; border: 2px solid var(--color-accent);">
+            <h3 class="card-title" style="font-size: 1.2rem;">Harrison Forde</h3>
+            <span class="caption-text" style="color: var(--color-accent);">Operations Workstream Lead</span>
+            <p class="caption-text" style="margin-block: 8px;">Direct: +1 (212) 555-0144<br>h.forde@vanguardstrategy.com</p>
+            <a href="contact.html" class="btn btn-secondary" style="width: 100%;"><i class="ri-chat-1-line"></i> Secure Message</a>
+          </div>
+
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=200&q=80" alt="Dr. Alistair Chen" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; margin-block-end: 8px; border: 2px solid var(--color-accent);">
+            <h3 class="card-title" style="font-size: 1.2rem;">Dr. Alistair Chen</h3>
+            <span class="caption-text" style="color: var(--color-accent);">Digital Transformation Lead</span>
+            <p class="caption-text" style="margin-block: 8px;">Direct: +1 (212) 555-0182<br>a.chen@vanguardstrategy.com</p>
+            <a href="contact.html" class="btn btn-secondary" style="width: 100%;"><i class="ri-chat-1-line"></i> Secure Message</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-block-end: var(--space-sm);">
+            <span class="brand-icon-box"><i class="ri-shield-flash-line"></i></span>
+            <span>Vanguard Partners</span>
+          </a>
+          <p style="margin-block-end: var(--space-md);">
+            Elite management consulting and financial advisory firm engineered to counsel boards, CEOs, and private equity leaders on high-impact strategic initiatives.
+          </p>
+          <p class="caption-text">
+            <i class="ri-map-pin-line"></i> 375 Park Avenue, 32nd Floor, New York, NY 10152<br>
+            <i class="ri-phone-line"></i> +1 (212) 555-0199 &nbsp;|&nbsp; <i class="ri-mail-line"></i> advisory@vanguardstrategy.com
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="team-social-link" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            <a href="#" class="team-social-link" aria-label="Twitter / X"><i class="ri-twitter-x-line"></i></a>
+            <a href="#" class="team-social-link" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Advisory Practices</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Corporate Finance</a></li>
+            <li><a href="services.html" class="footer-link">M&A & Deal Structuring</a></li>
+            <li><a href="services.html" class="footer-link">AI & Digital Strategy</a></li>
+            <li><a href="services.html" class="footer-link">Operations Turnaround</a></li>
+            <li><a href="services.html" class="footer-link">ESG & Risk Governance</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">Firm Overview</a></li>
+            <li><a href="services.html" class="footer-link">Consulting Services</a></li>
+            <li><a href="blog.html" class="footer-link">Executive Insights</a></li>
+            <li><a href="contact.html" class="footer-link">Contact & Locations</a></li>
+            <li><a href="dashboard.html" class="footer-link">Client Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Executive Briefing</h4>
+          <p class="caption-text" style="margin-block-end: var(--space-xs);">
+            Quarterly strategic memoranda analyzing geopolitical risk, capital allocation, and M&A trends.
+          </p>
+          <form class="footer-newsletter-form" data-validate="true" novalidate>
+            <div class="form-group" style="margin-block-end: 0; width: 100%;">
+              <input type="email" class="form-input" placeholder="Enter work email" required aria-label="Email address">
+              <span class="form-error-msg">Please enter a valid work email.</span>
+            </div>
+            <button type="submit" class="btn btn-primary" style="padding: 10px 18px;">Join</button>
+          </form>
+          <div class="form-success-banner" style="margin-block-start: 8px;">
+            Subscription confirmed.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vanguard Strategy Partners LLC. All rights reserved. Confidential Business Advisory.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
