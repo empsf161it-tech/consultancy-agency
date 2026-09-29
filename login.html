@@ -10,15 +10,27 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
+  <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpg">
 </head>
 <body class="auth-body-layout">
 
+  <!-- Floating Actions (Theme & RTL) -->
+  <div style="position: absolute; top: 24px; inset-inline-end: 24px; display: flex; gap: 12px; z-index: 10;">
+    <button class="btn-icon-only rtl-toggle-btn" id="rtlToggleDesktop" aria-label="Toggle RTL direction" title="Toggle RTL direction">
+      <i class="ri-arrow-left-right-line"></i>
+    </button>
+    <button class="btn-icon-only theme-toggle-btn" id="themeToggleDesktop" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <i class="ri-moon-line"></i>
+    </button>
+  </div>
+
   <!-- AUTH CARD: Centered vertically & horizontally, no scroll, NO theme toggle, NO back-to-home -->
   <main class="auth-card">
-    <div class="auth-logo">
+    <div class="auth-logo" style="display: flex; flex-direction: column; align-items: center; gap: 8px; margin-block-end: 16px;">
       <span class="brand-icon-box" style="width: 48px; height: 48px; font-size: 1.5rem; margin-inline: auto;">
         <i class="ri-shield-flash-line"></i>
       </span>
+      <span style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 580; color: var(--color-text);">Vanguard Partners</span>
     </div>
 
     <h1 class="auth-title">Advisory Portal Login</h1>
@@ -36,12 +48,17 @@
       </div>
 
       <div class="form-group">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-block-end: 6px;">
-          <label class="form-label" for="loginPassword" style="margin-block-end: 0;">Password <span class="required-star">*</span></label>
+        <label class="form-label" for="loginPassword">Password <span class="required-star">*</span></label>
+        <input type="password" class="form-input" id="loginPassword" name="password" minlength="8" placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢" required>
+        <span class="form-error-msg">Password must be at least 8 characters.</span>
+        
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-block-start: 12px;">
+          <label class="form-checkbox-wrapper" style="margin-block-end: 0;">
+            <input type="checkbox" name="remember" id="rememberMe">
+            <span style="font-size: var(--size-caption); color: var(--color-text-muted);">Remember me</span>
+          </label>
           <a href="#" style="font-size: var(--size-caption); color: var(--color-accent);">Forgot password?</a>
         </div>
-        <input type="password" class="form-input" id="loginPassword" name="password" minlength="8" placeholder="••••••••" required>
-        <span class="form-error-msg">Password must be at least 8 characters.</span>
       </div>
 
       <button type="submit" class="btn btn-primary" style="width: 100%; margin-block-start: var(--space-xs);">
@@ -83,3 +100,4 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+

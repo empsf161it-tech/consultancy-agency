@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
+  <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpg">
 </head>
 <body>
 
@@ -26,7 +27,6 @@
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="home2.html" class="nav-link">Home 2</a></li>
           <li><a href="services.html" class="nav-link">Services</a></li>
-          <li><a href="index.html#case-studies" class="nav-link">Case Studies</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
           <li><a href="blog.html" class="nav-link">Blog</a></li>
           <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -64,7 +64,6 @@
         <li><a href="index.html" class="mobile-nav-link">Home</a></li>
         <li><a href="home2.html" class="mobile-nav-link">Home 2</a></li>
         <li><a href="services.html" class="mobile-nav-link">Services</a></li>
-        <li><a href="index.html#case-studies" class="mobile-nav-link">Case Studies</a></li>
         <li><a href="about.html" class="mobile-nav-link">About</a></li>
         <li><a href="blog.html" class="mobile-nav-link">Blog</a></li>
         <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
@@ -148,7 +147,7 @@
       <div class="dash-pane active" id="tabWorkstreams">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-block-end: var(--space-md); flex-wrap: wrap; gap: 12px;">
           <h2 style="font-size: 1.5rem; text-align: start;">Strategic Workstreams &amp; Velocity</h2>
-          <div style="display: flex; gap: 8px;">
+          <div class="workstream-filters">
             <button class="filter-btn workstream-filter-btn active" data-status="all">All (4)</button>
             <button class="filter-btn workstream-filter-btn" data-status="active">In Progress (2)</button>
             <button class="filter-btn workstream-filter-btn" data-status="review">Board Review (1)</button>
@@ -210,7 +209,7 @@
             <h3 class="card-title">100-Day Synergy Blueprint</h3>
             <p class="caption-text">Comprehensive quantitative audit of cross-entity redundancies and procurement savings.</p>
             <div style="margin-block-start: auto; width: 100%; border-top: 1px solid var(--color-border); padding-top: 12px; display: flex; justify-content: space-between; align-items: center;">
-              <span class="caption-text">PDF • 4.8 MB</span>
+              <span class="caption-text">PDF â€¢ 4.8 MB</span>
               <a href="#" class="btn btn-secondary" style="padding: 6px 14px; font-size: 0.85rem;"><i class="ri-download-2-line"></i> Download</a>
             </div>
           </div>
@@ -220,7 +219,7 @@
             <h3 class="card-title">Working Capital Stress-Test</h3>
             <p class="caption-text">Monte Carlo liquidity simulation assessing interest rate fluctuations across FY26-FY28.</p>
             <div style="margin-block-start: auto; width: 100%; border-top: 1px solid var(--color-border); padding-top: 12px; display: flex; justify-content: space-between; align-items: center;">
-              <span class="caption-text">XLSX • 8.2 MB</span>
+              <span class="caption-text">XLSX â€¢ 8.2 MB</span>
               <a href="#" class="btn btn-secondary" style="padding: 6px 14px; font-size: 0.85rem;"><i class="ri-download-2-line"></i> Download</a>
             </div>
           </div>
@@ -230,7 +229,7 @@
             <h3 class="card-title">IT Security &amp; Data Integration Memo</h3>
             <p class="caption-text">Regulatory data boundary clearance and enterprise cyber posture review post-closing.</p>
             <div style="margin-block-start: auto; width: 100%; border-top: 1px solid var(--color-border); padding-top: 12px; display: flex; justify-content: space-between; align-items: center;">
-              <span class="caption-text">PDF • 2.4 MB</span>
+              <span class="caption-text">PDF â€¢ 2.4 MB</span>
               <a href="#" class="btn btn-secondary" style="padding: 6px 14px; font-size: 0.85rem;"><i class="ri-download-2-line"></i> Download</a>
             </div>
           </div>
@@ -243,7 +242,7 @@
         <div class="card" style="align-items: stretch; text-align: start; padding: var(--space-xl);">
           <div style="display: flex; flex-direction: column; gap: var(--space-lg);">
             <div style="display: flex; gap: 16px; align-items: flex-start;">
-              <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--color-success); color: white; display: flex; align-items: center; justify-content: center; font-size: 1rem;"><i class="ri-check-line"></i></div>
+              <div style="width: 32px; height: 32px; min-width: 32px; min-height: 32px; flex-shrink: 0; border-radius: 50%; background: var(--color-success); color: white; display: flex; align-items: center; justify-content: center; font-size: 1rem;"><i class="ri-check-line"></i></div>
               <div>
                 <strong>Milestone 01: Diagnostic Liquidity Audit Complete</strong>
                 <p class="caption-text">Uncovered $38M in trapped regional inventory. Approved by Audit Committee on Aug 24, 2026.</p>
@@ -251,7 +250,7 @@
             </div>
 
             <div style="display: flex; gap: 16px; align-items: flex-start;">
-              <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--color-accent); color: #0A192F; display: flex; align-items: center; justify-content: center; font-size: 1rem;"><i class="ri-time-line"></i></div>
+              <div style="width: 32px; height: 32px; min-width: 32px; min-height: 32px; flex-shrink: 0; border-radius: 50%; background: var(--color-accent); color: #0A192F; display: flex; align-items: center; justify-content: center; font-size: 1rem;"><i class="ri-time-line"></i></div>
               <div>
                 <strong>Milestone 02: Supplier Contract Renogotiation Sprint</strong>
                 <p class="caption-text">Targeting 120 BPS COGS reduction. In active negotiations across top 40 vendor contracts.</p>
@@ -259,7 +258,7 @@
             </div>
 
             <div style="display: flex; gap: 16px; align-items: flex-start;">
-              <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--color-surface-alt); border: 1px solid var(--color-border); color: var(--color-text-muted); display: flex; align-items: center; justify-content: center; font-size: 1rem;"><i class="ri-checkbox-blank-circle-line"></i></div>
+              <div style="width: 32px; height: 32px; min-width: 32px; min-height: 32px; flex-shrink: 0; border-radius: 50%; background: var(--color-surface-alt); border: 1px solid var(--color-border); color: var(--color-text-muted); display: flex; align-items: center; justify-content: center; font-size: 1rem;"><i class="ri-checkbox-blank-circle-line"></i></div>
               <div>
                 <strong>Milestone 03: Final Operating Entity Handover</strong>
                 <p class="caption-text">Transitioning oversight to internal management committee. Slated for Q1 2027.</p>
@@ -274,7 +273,7 @@
         <h2 style="font-size: 1.5rem; text-align: start; margin-block-end: var(--space-md);">Assigned Engagement Partners</h2>
         <div class="card-grid card-grid-3">
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80" alt="Julian Sterling" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; margin-block-end: 8px; border: 2px solid var(--color-accent);">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80" alt="Julian Sterling" style="width: 72px; height: 72px; min-width: 72px; min-height: 72px; flex-shrink: 0; border-radius: 50%; object-fit: cover; margin-block-end: 8px; border: 2px solid var(--color-accent);">
             <h3 class="card-title" style="font-size: 1.2rem;">Julian Sterling</h3>
             <span class="caption-text" style="color: var(--color-accent);">Lead Engagement Partner</span>
             <p class="caption-text" style="margin-block: 8px;">Direct: +1 (212) 555-0199<br>j.sterling@vanguardstrategy.com</p>
@@ -282,7 +281,7 @@
           </div>
 
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80" alt="Harrison Forde" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; margin-block-end: 8px; border: 2px solid var(--color-accent);">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80" alt="Harrison Forde" style="width: 72px; height: 72px; min-width: 72px; min-height: 72px; flex-shrink: 0; border-radius: 50%; object-fit: cover; margin-block-end: 8px; border: 2px solid var(--color-accent);">
             <h3 class="card-title" style="font-size: 1.2rem;">Harrison Forde</h3>
             <span class="caption-text" style="color: var(--color-accent);">Operations Workstream Lead</span>
             <p class="caption-text" style="margin-block: 8px;">Direct: +1 (212) 555-0144<br>h.forde@vanguardstrategy.com</p>
@@ -290,7 +289,7 @@
           </div>
 
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=200&q=80" alt="Dr. Alistair Chen" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; margin-block-end: 8px; border: 2px solid var(--color-accent);">
+            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=200&q=80" alt="Dr. Alistair Chen" style="width: 72px; height: 72px; min-width: 72px; min-height: 72px; flex-shrink: 0; border-radius: 50%; object-fit: cover; margin-block-end: 8px; border: 2px solid var(--color-accent);">
             <h3 class="card-title" style="font-size: 1.2rem;">Dr. Alistair Chen</h3>
             <span class="caption-text" style="color: var(--color-accent);">Digital Transformation Lead</span>
             <p class="caption-text" style="margin-block: 8px;">Direct: +1 (212) 555-0182<br>a.chen@vanguardstrategy.com</p>
@@ -375,3 +374,5 @@
   <script src="assets/js/dashboard.js"></script>
 </body>
 </html>
+
+
